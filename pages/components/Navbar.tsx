@@ -127,7 +127,7 @@ export default function Navbar() {
           scrollPosition > 16
             ? "bg-white text-gray-800 shadow opacity-90"
             : "shadow-none text-gray-50",
-          "hidden xl:flex top-0 w-full h-16  items-center px-5 fixed transition-shadow z-20"
+          "hidden xl:flex top-0 w-full h-16  items-center px-5 fixed transition-shadow z-20 font-semibold"
         )}
       >
         <Link href="/" className="h-16 w-44 flex lg:h-12 lg:w-32">
