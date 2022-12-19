@@ -261,7 +261,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="h-60 md:h-96 w-full flex relative xl:h-[28rem]">
+      <div className="h-60 md:h-96 w-full flex relative lg:h-[28rem]">
         <div className="bg-teal-900 absolute h-full w-full z-10 opacity-60  items-center flex justify-center"></div>
         <ParallaxBanner style={{ position: "relative" }}>
           <ParallaxBannerLayer speed={-15}>

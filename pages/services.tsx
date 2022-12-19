@@ -9,10 +9,10 @@ import ProjectManagement from "./Project-Management";
 export default function Services() {
   return (
     <div>
-      <div className="lg:mb-8 flex">
+      <div className="">
       <Navbar />
       </div>
-      <div id="human-resource-management" className="mt-12 lg:mt-0 pl-4 pr-1 lg:px-6">
+      <div id="human-resource-management" className="lg:mt-0 pl-4 pr-1 lg:px-6">
         <HumanResourceManagement />
       </div>
       <div id="strategic-ICT-consulting" className="pl-4 pr-1 lg:px-6 ">

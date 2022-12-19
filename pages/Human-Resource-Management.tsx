@@ -18,7 +18,7 @@ export default function HumanResourceManagement() {
         management systems, designing employee engagement initiatives, and
         providing guidance on employee benefits and compensation packages. We
         also provide ongoing support and advice on HR-related issues to ensure
-        that our clients’ HR strategies are successful.
+        that our clients&apos; HR strategies are successful.
       </div>
       <ul className="list-disc my-2 list-inside">
         <li className="my-2">

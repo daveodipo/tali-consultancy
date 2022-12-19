@@ -9,6 +9,8 @@ import { BsArrowDownCircle } from "react-icons/bs";
 export default function ImgSlides({ startRef }: { startRef: null | any }) {
   const [embla, setEmbla] = useState<Embla | null>(null);
   const autoplay = useRef(Autoplay({ delay: 5000 }));
+
+  // scale animation
   // const [activeIndex,setActiveIndex] = useState(0)
 
   // useEffect(()=> {
@@ -54,7 +56,7 @@ export default function ImgSlides({ startRef }: { startRef: null | any }) {
           </div>
           <div className="pl-11 lg:pl-12 text-gray-50 mb-4 lg:mb-6 text-4xl lg:text-5xl xl:text-6xl font-semibold md:left-16 z-10">
             {item.article}
-          </div>
+          </div> 
           <div className="text-gray-50 lg:pl-12 pl-11 uppercase flex items-center font-semibold text-sm">
             Learn more
             <FaLongArrowAltRight className="text-2xl font-semibold pt-1 pl-2" />

@@ -28,9 +28,9 @@ export default function Navbar() {
         setIsOpen(false);
       }
     }
-    window.addEventListener("click", handleOutsideClick);
-    // cleanup
-    return () => window.removeEventListener("click", handleOutsideClick);
+    window.addEventListener("click", handleOutsideClick as any);
+  
+    return () => window.removeEventListener("click", handleOutsideClick as any);
   }, [isOpen]);
 
   return (
@@ -106,7 +106,14 @@ export default function Navbar() {
           </div>
         </div>
       </Transition>
-      <div className={classNames(scrollPosition > 16 ? "fixed bg-white opacity-90 shadow transition-shadow": "shadow-none","w-full h-16 flex items-center justify-center px-2 pt-2 xl:hidden text-tali1")}>
+      <div
+        className={classNames(
+          scrollPosition > 16
+            ? "fixed bg-white opacity-90 shadow transition-shadow"
+            : "shadow-none",
+          "w-full h-16 flex items-center justify-center px-2 pt-2 xl:hidden text-tali1"
+        )}
+      >
         <div className="h-14 w-36 flex lg:h-12 lg:w-32">
           <Image src={tali} alt="tali" />
         </div>
@@ -117,10 +124,10 @@ export default function Navbar() {
       </div>
       <div
         className={classNames(
-          scrollPosition > 20
+          scrollPosition > 16
             ? "bg-white text-gray-800 shadow opacity-90"
             : "shadow-none text-gray-50",
-          "invisible xl:visible w-full h-16 flex items-center px-5 fixed transition-shadow z-20 text-base"
+          "hidden xl:flex top-0 w-full h-16  items-center px-5 fixed transition-shadow z-20"
         )}
       >
         <Link href="/" className="h-16 w-44 flex lg:h-12 lg:w-32">
