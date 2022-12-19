@@ -50,8 +50,8 @@ export default function ImgSlides({ startRef }: { startRef: null | any }) {
           objectFit="cover"
           data-pin-no-hover="true"
         />
-        <div className="absolute top-1/3 md:mt-6 h-auto flex flex-col">
-          <div className=" bg-teal-600 text-xs opacity-90 w-fit mb-9 text-gray-100 font-semibold px-2 py-2 border border-gray-200">
+        <div className="absolute top-1/3 md:mt-6 h-auto flex flex-col mt-8">
+          <div className="text-sm opacity-90 w-fit mb-2 pl-11 lg:pl-12 text-gray-100 font-bold px-2 py-2 ">
             {item.headline}
           </div>
           <div className="pl-11 lg:pl-12 text-gray-50 mb-4 lg:mb-6 text-4xl lg:text-5xl xl:text-6xl font-semibold md:left-16 z-10">
