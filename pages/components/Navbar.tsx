@@ -114,10 +114,9 @@ export default function Navbar() {
           "w-full h-16 flex items-center justify-center px-2 pt-2 xl:hidden text-tali1"
         )}
       >
-        <div className="h-14 w-36 flex lg:h-12 lg:w-32">
+        <div className="h-14 w-36 flex left-3 absolute">
           <Image src={tali} alt="tali" />
         </div>
-        {/* <div className={classNames(scrollPosition > 16 ? "bg-white opacity-90 shadow":"shadow-none","top-3 z-10 right-3 fixed text-gray-50")}></div> */}
         <div className="top-2 z-[100] right-3 absolute ">
           <Hamburger toggled={isOpen} toggle={handleIsOpen} />
         </div>
@@ -125,12 +124,12 @@ export default function Navbar() {
       <div
         className={classNames(
           scrollPosition > 16
-            ? "bg-white text-gray-800 shadow opacity-90"
+            ? "bg-gray-50 text-gray-800 shadow opacity-90"
             : "shadow-none text-gray-50",
           "hidden xl:flex top-0 w-full h-16  items-center px-5 fixed transition-shadow z-20 font-semibold"
         )}
       >
-        <Link href="/" className="h-16 w-44 flex lg:h-12 lg:w-32">
+        <Link href="/" className="h-14 w-36 flex top-1 left-3 absolute">
           <Image src={tali} alt="tali" />
         </Link>
         <div className="flex ml-auto">
