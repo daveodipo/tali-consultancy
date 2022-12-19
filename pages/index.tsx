@@ -89,7 +89,7 @@ export default function Home() {
                 systems, employee engagement initiatives and more.
               </div>
               <Link
-                className="text-teal-600 flex items-center"
+                className="text-teal-600 flex items-center text-sm mt-1"
                 href="/services/#human-resource-management"
               >
                 Read more{" "}
@@ -116,7 +116,7 @@ export default function Home() {
                 compliance, cloud services and more.
               </div>
               <Link
-                className="text-teal-600 flex items-center"
+                className="text-teal-600 flex items-center text-sm mt-1"
                 href="/services/#strategic-ICT-consulting"
               >
                 Read more{" "}
@@ -143,7 +143,7 @@ export default function Home() {
                 more.
               </div>
               <Link
-                className="text-teal-600 flex items-center"
+                className="text-teal-600 flex items-center text-sm mt-1"
                 href="/services/#financial-grants-and-management"
               >
                 Read more{" "}
@@ -173,7 +173,7 @@ export default function Home() {
                 stock control and more.
               </div>
               <Link
-                className="text-teal-600 flex items-center"
+                className="text-teal-600 flex items-center text-sm mt-1"
                 href="/services/#procurement-and-logistics"
               >
                 Read more{" "}
@@ -195,7 +195,7 @@ export default function Home() {
                 Development, Capacity Building and more.
               </div>
               <Link
-                className="text-teal-600 flex items-center"
+                className="text-teal-600 flex items-center text-sm mt-1"
                 href="/services/#project-management"
               >
                 Read more{" "}
@@ -222,7 +222,7 @@ export default function Home() {
                 post evaluations and more.
               </div>
               <Link
-                className="text-teal-600 flex items-center"
+                className="text-teal-600 flex items-center text-sm mt-1"
                 href="/services/#project-management"
               >
                 Read more{" "}
@@ -251,7 +251,7 @@ export default function Home() {
                 Controls and more.
               </div>
               <Link
-                className="text-teal-600 flex items-center"
+                className="text-teal-600 flex items-center text-sm mt-1"
                 href="/services/#program-reengineering"
               >
                 Read more{" "}
