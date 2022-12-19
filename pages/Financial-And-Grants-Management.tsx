@@ -1,7 +1,7 @@
 export default function FinancialAndGrantsManagement() {
   return (
-    <div className="flex flex-col pr-3 pl-1 mb-16">
-      <div className="text-teal-500 text-xl font-semibold flex justify-center mb-8">
+    <div className="flex flex-col pr-3 pl-1 mb-16 text-gray-800 md:text-xl">
+      <div className="text-teal-500 text-xl md:text-2xl font-semibold flex justify-center mb-8">
         Financial and Grants Management
       </div>
       <div>

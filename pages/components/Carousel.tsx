@@ -1,53 +1,83 @@
-import React, { useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
-import { Carousel } from "@mantine/carousel";
+import { Carousel, Embla } from "@mantine/carousel";
 import Image from "next/image";
 import imagesAndText from "../../public/media";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { BsArrowDownCircle } from "react-icons/bs";
-import Link from "next/link";
-// import EmblaCarousel from 'embla-carousel'
 
+export default function ImgSlides({ startRef }) {
+  const [embla, setEmbla] = useState<Embla | null>(null);
+  const autoplay = useRef(Autoplay({ delay: 5000 }));
+  // const [activeIndex,setActiveIndex] = useState(0)
 
-// const options = { loop: false }
-// const embla = EmblaCarousel(emblaNode, options)
+  // useEffect(()=> {
+  //   if(embla) {
+  //     setActiveIndex(embla.selectedScrollSnap())
+  //   }
+  // },[embla])
 
-export default function Demo() {
+  // useEffect(()=> {
+  //   const currentImage = embla?.scrollSnapList()[activeIndex]
+  //   currentImage?.classList.add("transform", "scale-150")
+  //   currentImage.addEventListener("transitioned", ()={currentImage.classList.remove("transform", "scale-150")})
+  // })
+
+  const handleButtonClick = useCallback(
+    (startRef) => {
+      if (startRef.current) {
+        window.scrollTo({
+          top: startRef.current.offsetTop,
+          behavior: "smooth",
+        });
+      }
+
+      if (!embla) return;
+      embla.reInit();
+    },
+    [embla]
+  );
+
   const slides = imagesAndText.map((item, i) => (
     <Carousel.Slide key={i}>
       <div className="h-screen bg-inherit flex w-full relative">
-        <Image src={item.image.src} alt="tali consultancy" fill />
-        <p className="absolute top-1/3 z-10  text-gray-100 font-semibold text-lg bg-teal-600 px-1 py-2 border border-gray-200">
+        <Image
+          src={item.image.src}
+          alt="tali consultancy"
+          fill
+          objectFit="cover"
+        />
+        <div className="absolute top-1/3 md:mt-6 h-auto flex flex-col">
+        <div className=" bg-teal-600 xl:text-base opacity-90 w-fit mb-9 text-gray-100 font-semibold text-sm px-2 py-2 border border-gray-200">
           {item.headline}
-        </p>
-        <div className="absolute top-96 text-gray-50 text-6xl font-semibold left-10 z-10">
+        </div>
+        <div className="pl-11 lg:pl-12 text-gray-50 mb-4 lg:mb-6 text-4xl lg:text-5xl xl:text-6xl font-semibold md:left-16 z-10">
           {item.article}
         </div>
-        <div className="text-gray-50 absolute z-10 bottom-56 flex items-center font-semibold text-xl left-9">
+        <div className="text-gray-50 lg:pl-12 pl-11 xl:text-base uppercase flex items-center font-semibold text-sm">
           Learn more
           <FaLongArrowAltRight className="text-2xl font-semibold pt-1 pl-2" />
         </div>
-        <Link
-          href="#start-home"
-          className="absolute text-gray-50 font-bold bottom-5 text-3xl left-1/2 animate-bounce"
+        </div>
+        <button
+          className="absolute text-gray-50 font-bold bottom-5 lg:text-2xl text-3xl left-1/2 animate-bounce md:text-4xl"
+          onClick={() => handleButtonClick(startRef)}
         >
           <BsArrowDownCircle />
-        </Link>
+        </button>
       </div>
     </Carousel.Slide>
   ));
 
-  const autoplay = useRef(Autoplay({ delay: 5000 }));
-
   return (
     <Carousel
-      // sx={{ maxWidth: 320 }}
       mx="auto"
       // withIndicators
       plugins={[autoplay.current]}
       onMouseEnter={autoplay.current.stop}
       onMouseLeave={autoplay.current.reset}
       // loop={true}
+      getEmblaApi={setEmbla}
     >
       {slides}
     </Carousel>

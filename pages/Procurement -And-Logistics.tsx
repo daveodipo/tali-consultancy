@@ -1,7 +1,7 @@
 export default function ProcurementAndLogistics() {
   return (
-    <div className="flex flex-col pr-3 pl-1 mb-16">
-      <div className="text-teal-500 text-xl font-semibold mb-8 flex justify-center">
+    <div className="flex flex-col pr-3 pl-1 mb-16 text-gray-800 md:text-xl">
+      <div className="text-teal-500 text-xl md:text-2xl font-semibold mb-8 flex justify-center">
         Procurement and Logistics
       </div>
       <div>

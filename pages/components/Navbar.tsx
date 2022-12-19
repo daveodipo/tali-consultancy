@@ -1,17 +1,37 @@
 import { Slant as Hamburger } from "hamburger-react";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import Link from "next/link";
 import { MdArrowRight } from "react-icons/md";
-
-
+import Image from "next/image";
+import tali from "./../../public/Tali-logo.png";
+import { useScrollPosition } from "../hooks/useScrollPosition";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const modal = useRef<any>(null);
+
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(" ");
+  }
+
+  const scrollPosition = useScrollPosition();
 
   function handleIsOpen() {
     setIsOpen((prevState) => !prevState);
   }
+
+  useEffect(() => {
+    if (!isOpen) return;
+    function handleOutsideClick(event: React.MouseEvent<HTMLElement>) {
+      if (modal.current && !modal.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+    window.addEventListener("click", handleOutsideClick);
+    // cleanup
+    return () => window.removeEventListener("click", handleOutsideClick);
+  }, [isOpen]);
 
   return (
     <>
@@ -25,58 +45,103 @@ export default function Navbar() {
         leaveTo="opacity-0"
       >
         <div
-          className={`flex fixed top-16 h-2/5 bg-white lg:hidden w-full shadow-xl z-10 ${
+          className={`flex fixed top-16 h-2/5 lg:h-full lg:w-3/4 bg-tali1 text-gray-50 w-full shadow-xl z-10 ${
             isOpen ? "left-0" : "left-[-500px]"
           }`}
+          ref={modal}
         >
-          <div className="fixed pt-1 flex flex-col text-2xl  justify-center w-full font-medium pl-4 mb-10">
+          <div className="fixed pt-1 flex flex-col text-2xl md:pt-8 md:pl-8 justify-center w-full font-medium pl-4 mb-10">
             <div className="flex items-center">
-            <Link href="/" className="my-3 mr-1" onClick={handleIsOpen}>
-              Home 
-            </Link>
-            <div className="text-teal-500"><MdArrowRight/></div>
+              <Link href="/" className="my-3 mr-1" onClick={handleIsOpen}>
+                Home
+              </Link>
+              <div className="text-teal-500">
+                <MdArrowRight />
+              </div>
             </div>
             <div className="flex items-center">
-            <Link href="about" className="my-3 mr-1" onClick={handleIsOpen}>
-              About
-            </Link>
-            <div className="text-teal-500"><MdArrowRight/></div>
+              <Link href="about" className="my-3 mr-1" onClick={handleIsOpen}>
+                About
+              </Link>
+              <div className="text-teal-500">
+                <MdArrowRight />
+              </div>
             </div>
             <div className="flex items-center">
-            <Link href="services" className="my-3 mr-1" onClick={handleIsOpen}>
-              Services
-            </Link>
-            <div className="text-teal-500"><MdArrowRight/></div>
+              <Link
+                href="services"
+                className="my-3 mr-1"
+                onClick={handleIsOpen}
+              >
+                Services
+              </Link>
+              <div className="text-teal-500">
+                <MdArrowRight />
+              </div>
             </div>
             <div className="flex items-center">
-            <Link
-              href="insights"
-              className="my-3 flex items-center mr-1"
-              onClick={handleIsOpen}
-            >
-              Insights
-            </Link>
-            <div className="text-teal-500"><MdArrowRight/></div>
+              <Link
+                href="insights"
+                className="my-3 flex items-center mr-1"
+                onClick={handleIsOpen}
+              >
+                Insights
+              </Link>
+              <div className="text-teal-500">
+                <MdArrowRight />
+              </div>
             </div>
             <div className="flex items-center">
-           <Link
-              href="contact"
-              className="my-3 flex items-center mr-1"
-              onClick={handleIsOpen}
-            >
-              Contact
-            </Link>
-            <div className="text-teal-500"><MdArrowRight/></div>
+              <Link
+                href="contact"
+                className="my-3 flex items-center mr-1"
+                onClick={handleIsOpen}
+              >
+                Contact
+              </Link>
+              <div className="text-teal-500">
+                <MdArrowRight />
+              </div>
             </div>
           </div>
         </div>
       </Transition>
-      <div className="h-16 flex items-center justify-center px-2">
-        <div>
-          <p className="font-bold text-3xl font-Playfair">Tali Consultancy</p>
+      <div className={classNames(scrollPosition > 16 ? "fixed bg-white opacity-90 shadow transition-shadow": "shadow-none","w-full h-16 flex items-center justify-center px-2 pt-2 xl:hidden text-tali1")}>
+        <div className="h-14 w-36 flex lg:h-12 lg:w-32">
+          <Image src={tali} alt="tali" />
         </div>
-        <div className="top-3 z-10 right-3 absolute">
+        {/* <div className={classNames(scrollPosition > 16 ? "bg-white opacity-90 shadow":"shadow-none","top-3 z-10 right-3 fixed text-gray-50")}></div> */}
+        <div className="top-2 z-[100] right-3 absolute ">
           <Hamburger toggled={isOpen} toggle={handleIsOpen} />
+        </div>
+      </div>
+      <div
+        className={classNames(
+          scrollPosition > 20
+            ? "bg-white text-gray-800 shadow opacity-90"
+            : "shadow-none text-gray-50",
+          "invisible xl:visible w-full h-16 flex items-center px-5 fixed transition-shadow z-20"
+        )}
+      >
+        <Link href="/" className="h-16 w-44 flex lg:h-12 lg:w-32">
+          <Image src={tali} alt="tali" />
+        </Link>
+        <div className="flex ml-auto">
+          <Link href="/" className="mx-2 hover:text-tali3">
+            Home
+          </Link>
+          <Link href="about" className="mx-2 hover:text-tali3">
+            About
+          </Link>
+          <Link href="services" className="mx-2 hover:text-tali3">
+            Services
+          </Link>
+          <Link href="insights" className="mx-2 hover:text-tali3">
+            Insights
+          </Link>
+          <Link href="contact" className="mx-2 hover:text-tali3">
+            Contact
+          </Link>
         </div>
       </div>
     </>
