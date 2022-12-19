@@ -6,7 +6,7 @@ import imagesAndText from "../../public/media";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { BsArrowDownCircle } from "react-icons/bs";
 
-export default function ImgSlides({ startRef }) {
+export default function ImgSlides({ startRef }: { startRef: null | any }) {
   const [embla, setEmbla] = useState<Embla | null>(null);
   const autoplay = useRef(Autoplay({ delay: 5000 }));
   // const [activeIndex,setActiveIndex] = useState(0)
@@ -24,7 +24,7 @@ export default function ImgSlides({ startRef }) {
   // })
 
   const handleButtonClick = useCallback(
-    (startRef) => {
+    (startRef: null | any) => {
       if (startRef.current) {
         window.scrollTo({
           top: startRef.current.offsetTop,
@@ -46,21 +46,22 @@ export default function ImgSlides({ startRef }) {
           alt="tali consultancy"
           fill
           objectFit="cover"
+          data-pin-no-hover="true"
         />
         <div className="absolute top-1/3 md:mt-6 h-auto flex flex-col">
-        <div className=" bg-teal-600 xl:text-base opacity-90 w-fit mb-9 text-gray-100 font-semibold text-sm px-2 py-2 border border-gray-200">
-          {item.headline}
-        </div>
-        <div className="pl-11 lg:pl-12 text-gray-50 mb-4 lg:mb-6 text-4xl lg:text-5xl xl:text-6xl font-semibold md:left-16 z-10">
-          {item.article}
-        </div>
-        <div className="text-gray-50 lg:pl-12 pl-11 xl:text-base uppercase flex items-center font-semibold text-sm">
-          Learn more
-          <FaLongArrowAltRight className="text-2xl font-semibold pt-1 pl-2" />
-        </div>
+          <div className=" bg-teal-600 text-xs opacity-90 w-fit mb-9 text-gray-100 font-semibold px-2 py-2 border border-gray-200">
+            {item.headline}
+          </div>
+          <div className="pl-11 lg:pl-12 text-gray-50 mb-4 lg:mb-6 text-4xl lg:text-5xl xl:text-6xl font-semibold md:left-16 z-10">
+            {item.article}
+          </div>
+          <div className="text-gray-50 lg:pl-12 pl-11 uppercase flex items-center font-semibold text-sm">
+            Learn more
+            <FaLongArrowAltRight className="text-2xl font-semibold pt-1 pl-2" />
+          </div>
         </div>
         <button
-          className="absolute text-gray-50 font-bold bottom-5 lg:text-2xl text-3xl left-1/2 animate-bounce md:text-4xl"
+          className="absolute text-gray-50 font-bold bottom-5 left-1/2 animate-bounce"
           onClick={() => handleButtonClick(startRef)}
         >
           <BsArrowDownCircle />
@@ -76,7 +77,7 @@ export default function ImgSlides({ startRef }) {
       plugins={[autoplay.current]}
       onMouseEnter={autoplay.current.stop}
       onMouseLeave={autoplay.current.reset}
-      // loop={true}
+      loop={true}
       getEmblaApi={setEmbla}
     >
       {slides}

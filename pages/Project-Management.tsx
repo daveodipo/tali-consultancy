@@ -1,6 +1,6 @@
 export default function ProjectManagement() {
   return (
-    <div className="flex flex-col pr-3 pl-1 mb-12 md:text-xl text-gray-800">
+    <div className="flex flex-col pr-3 pl-1 mb-12 text-gray-800">
       <div className="text-teal-500 text-xl md:text-2xl font-semibold mb-8 flex justify-center">
         Project Management
       </div>

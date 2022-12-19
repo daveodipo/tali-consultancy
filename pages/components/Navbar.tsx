@@ -9,9 +9,9 @@ import { useScrollPosition } from "../hooks/useScrollPosition";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const modal = useRef<any>(null);
+  const modal = useRef<any | null>(null);
 
-  function classNames(...classes) {
+  function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(" ");
   }
 
@@ -120,7 +120,7 @@ export default function Navbar() {
           scrollPosition > 20
             ? "bg-white text-gray-800 shadow opacity-90"
             : "shadow-none text-gray-50",
-          "invisible xl:visible w-full h-16 flex items-center px-5 fixed transition-shadow z-20"
+          "invisible xl:visible w-full h-16 flex items-center px-5 fixed transition-shadow z-20 text-base"
         )}
       >
         <Link href="/" className="h-16 w-44 flex lg:h-12 lg:w-32">
