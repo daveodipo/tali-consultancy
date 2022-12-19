@@ -108,16 +108,16 @@ export default function Navbar() {
       </Transition>
       <div
         className={classNames(
-          scrollPosition > 16
-            ? "fixed bg-white opacity-90 shadow transition-shadow"
+          scrollPosition > 20
+            ? " bg-gray-50 opacity-90 shadow transition-shadow z-50"
             : "shadow-none",
-          "w-full h-16 flex items-center justify-center px-2 pt-2 xl:hidden text-tali1"
+          "w-full h-16 items-center justify-center px-2 pt-2 xl:hidden text-tali1 top-0 fixed"
         )}
       >
         <div className="h-14 w-36 flex left-3 absolute">
           <Image src={tali} alt="tali" />
         </div>
-        <div className="top-2 z-[100] right-3 absolute ">
+        <div className="top-2 z-20 right-3 absolute">
           <Hamburger toggled={isOpen} toggle={handleIsOpen} />
         </div>
       </div>
@@ -133,19 +133,19 @@ export default function Navbar() {
           <Image src={tali} alt="tali" />
         </Link>
         <div className="flex ml-auto">
-          <Link href="/" className="mx-2 hover:text-tali3">
+          <Link href="/" className="mx-2 xl:hover:text-tali3">
             Home
           </Link>
-          <Link href="about" className="mx-2 hover:text-tali3">
+          <Link href="about" className="mx-2 xl:hover:text-tali3">
             About
           </Link>
-          <Link href="services" className="mx-2 hover:text-tali3">
+          <Link href="services" className="mx-2 xl:hover:text-tali3">
             Services
           </Link>
-          <Link href="insights" className="mx-2 hover:text-tali3">
+          <Link href="insights" className="mx-2 xl:hover:text-tali3">
             Insights
           </Link>
-          <Link href="contact" className="mx-2 hover:text-tali3">
+          <Link href="contact" className="mx-2 xl:hover:text-tali3">
             Contact
           </Link>
         </div>
