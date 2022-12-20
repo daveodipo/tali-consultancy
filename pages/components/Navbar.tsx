@@ -5,7 +5,7 @@ import Link from "next/link";
 import { MdArrowRight } from "react-icons/md";
 import Image from "next/image";
 import tali from "./../../public/Tali-logo.png";
-import { useScrollPosition } from "../hooks/useScrollPosition";
+import useScrollPosition from "../hooks/useScrollPosition";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +29,7 @@ export default function Navbar() {
       }
     }
     window.addEventListener("click", handleOutsideClick as any);
-  
+
     return () => window.removeEventListener("click", handleOutsideClick as any);
   }, [isOpen]);
 
