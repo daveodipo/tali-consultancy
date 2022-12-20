@@ -5,7 +5,7 @@ import Image from "next/image";
 import imagesAndText from "../../public/media";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { BsArrowDownCircle } from "react-icons/bs";
-import Link from "next/link"
+import Link from "next/link";
 
 export default function ImgSlides({ startRef }: { startRef: null | any }) {
   const [embla, setEmbla] = useState<Embla | null>(null);
@@ -55,16 +55,22 @@ export default function ImgSlides({ startRef }: { startRef: null | any }) {
           <div className="text-sm opacity-90 w-fit mb-2 pl-11 lg:pl-12 text-gray-100 font-bold px-2 py-2 ">
             {item.headline}
           </div>
-          <Link href="/"className="pl-11 lg:pl-12 text-gray-50 mb-4 lg:mb-6 text-4xl lg:text-5xl xl:text-6xl font-semibold md:left-16 z-10">
+          <Link
+            href="/"
+            className="pl-11 lg:pl-12 text-gray-50 mb-4 lg:mb-6 text-4xl lg:text-5xl xl:text-6xl font-semibold md:left-16 z-10"
+          >
             {item.article}
           </Link>
-          <Link href="/" className="text-gray-50 lg:pl-12 pl-11 uppercase flex items-center font-semibold text-sm">
+          <Link
+            href="/"
+            className="text-gray-50 lg:pl-12 pl-11 uppercase flex items-center font-semibold text-sm"
+          >
             Learn more
             <FaLongArrowAltRight className="text-2xl font-semibold pt-1 pl-2" />
           </Link>
         </div>
         <button
-          className="absolute text-gray-50 font-bold bottom-5 left-1/2 animate-bounce"
+          className="absolute text-gray-50 font-bold bottom-10 pb-10 left-1/2 animate-bounce text-lg lg:text-base"
           onClick={() => handleButtonClick(startRef)}
         >
           <BsArrowDownCircle />
