@@ -13,7 +13,7 @@ export default function HumanResourceManagement() {
         benefit programs.
         <div></div>
         Our HR consultants have extensive experience in designing and
-        implementing HR strategies that are tailored to each client. We
+        implementing HR strategies that are tailored to meet each client&apos;s needs. We
         specialize in developing recruitment plans, creating performance
         management systems, designing employee engagement initiatives, and
         providing guidance on employee benefits and compensation packages. We
