@@ -277,7 +277,7 @@ export default function Home() {
         {/* <div className="bg-red-400 flex relative h-full"> */}
         {/* <div className="bg-teal-900 h-full w-full z-10 opacity-50 items-center flex justify-center"></div> */}
         <ParallaxBanner style={{ position: "relative"}}>
-          <ParallaxBannerLayer speed={-15}>
+          <ParallaxBannerLayer speed={-10}>
             <Image src={consultants} alt="consultants" fill objectFit="cover"/>
           </ParallaxBannerLayer>
         </ParallaxBanner>
