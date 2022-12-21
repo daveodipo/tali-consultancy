@@ -273,13 +273,15 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="h-60 md:h-96 w-full flex relative lg:h-[28rem] opacity-60">
-        {/* <div className="bg-teal-900  h-full w-full z-10 opacity-60  items-center flex justify-center"></div> */}
-        <ParallaxBanner style={{ position: "relative", display: "flex"}}>
+      <div className="h-60 md:h-96 w-full flex lg:h-[28rem] relative">
+        {/* <div className="bg-red-400 flex relative h-full"> */}
+        {/* <div className="bg-teal-900 h-full w-full z-10 opacity-50 items-center flex justify-center"></div> */}
+        <ParallaxBanner style={{ position: "relative"}}>
           <ParallaxBannerLayer speed={-15}>
-            <Image src={consultants} alt="consultants" fill />
+            <Image src={consultants} alt="consultants" fill objectFit="cover"/>
           </ParallaxBannerLayer>
         </ParallaxBanner>
+        {/* </div> */}
       </div>
       <div className="flex lg:hidden">
         <Image data-pin-no-hover="true" src={taliAfrica} alt="tali footprint" />
