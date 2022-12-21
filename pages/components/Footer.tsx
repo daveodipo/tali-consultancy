@@ -14,13 +14,13 @@ export default function Footer() {
           </Link>
           <div className="flex text-2xl justify-center my-6 ">
             <Link href="">
-              <FaLinkedinIn className="mx-3 lg:hover:text-tali2" />
+              <FaLinkedinIn className="mx-3 lg:hover:text-linkedInBlue" />
             </Link>
             <Link href="">
-              <FaFacebookF className="mx-3 lg:hover:text-tali2" />
+              <FaFacebookF className="mx-3 lg:hover:text-facebookBlue" />
             </Link>
             <Link href="https://twitter.com/Taliconsultancy">
-              <FaTwitter className="mx-3 lg:hover:text-tali3" />
+              <FaTwitter className="mx-3 lg:hover:text-twitterBlue" />
             </Link>
             {/* <FaInstagramSquare className="mx-3"/> */}
           </div>
