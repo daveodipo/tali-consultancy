@@ -21,7 +21,7 @@ import { BsArrowRightShort } from "react-icons/bs";
 import consultants from "./../public/consultants-small.png";
 import { ParallaxBannerLayer, ParallaxBanner } from "react-scroll-parallax";
 import taliAfrica from "./../public/Tali-Africa-small.png";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 export default function Home() {
   const startRef = useRef<null | any>(null);
@@ -90,7 +90,7 @@ export default function Home() {
                 systems, employee engagement initiatives and more.
               </div>
               <Link
-                className="text-teal-600 flex items-center text-sm mt-1"
+                className="text-teal-600 flex items-center text-sm mt-1 lg:hover:translate-x-2 transition ease-in-out delay-100"
                 href="/services/#human-resource-management"
               >
                 Read more{" "}
@@ -118,11 +118,11 @@ export default function Home() {
                 compliance, cloud services and more.
               </div>
               <Link
-                className="text-teal-600 flex items-center text-sm mt-1"
+                className="text-teal-600 flex items-center text-sm mt-1 lg:hover:translate-x-2 transition ease-in-out delay-100"
                 href="/services/#strategic-ICT-consulting"
               >
                 Read more{" "}
-                <BsArrowRightShort className="text-2xl font-semibold pt-1" />
+                <BsArrowRightShort className="text-2xl font-semibold pt-1 " />
               </Link>
             </div>
           </div>
@@ -146,7 +146,7 @@ export default function Home() {
                 more.
               </div>
               <Link
-                className="text-teal-600 flex items-center text-sm mt-1"
+                className="text-teal-600 flex items-center text-sm mt-1 lg:hover:translate-x-2 transition ease-in-out delay-100"
                 href="/services/#financial-grants-and-management"
               >
                 Read more{" "}
@@ -177,7 +177,7 @@ export default function Home() {
                 stock control and more.
               </div>
               <Link
-                className="text-teal-600 flex items-center text-sm mt-1"
+                className="text-teal-600 flex items-center text-sm mt-1 lg:hover:translate-x-2 transition ease-in-out delay-100"
                 href="/services/#procurement-and-logistics"
               >
                 Read more{" "}
@@ -205,7 +205,7 @@ export default function Home() {
                 Development, Capacity Building and more.
               </div>
               <Link
-                className="text-teal-600 flex items-center text-sm mt-1"
+                className="text-teal-600 flex items-center text-sm mt-1 lg:hover:translate-x-2 transition ease-in-out delay-100"
                 href="/services/#project-management"
               >
                 Read more{" "}
@@ -233,7 +233,7 @@ export default function Home() {
                 post evaluations and more.
               </div>
               <Link
-                className="text-teal-600 flex items-center text-sm mt-1"
+                className="text-teal-600 flex items-center text-sm mt-1 lg:hover:translate-x-2 transition ease-in-out delay-100"
                 href="/services/#project-management"
               >
                 Read more{" "}
@@ -263,7 +263,7 @@ export default function Home() {
                 Controls and more.
               </div>
               <Link
-                className="text-teal-600 flex items-center text-sm mt-1"
+                className="text-teal-600 flex items-center text-sm mt-1 lg:hover:translate-x-2 transition ease-in-out delay-100"
                 href="/services/#program-reengineering"
               >
                 Read more{" "}

@@ -70,7 +70,7 @@ export default function ImgSlides({ startRef }: { startRef: null | any }) {
           </Link>
         </div>
         <button
-          className="absolute text-gray-50 font-bold bottom-10 pb-8 lg:pb-0 left-1/2 animate-bounce text-lg lg:text-base"
+          className="absolute text-gray-50 font-bold bottom-10 lg:bottom-7 pb-8 lg:pb-0 left-1/2 animate-bounce text-lg lg:text-base"
           onClick={() => handleButtonClick(startRef)}
         >
           <BsArrowDownCircle />

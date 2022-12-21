@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 export default function About() {
   return (
-    <div>
+    <div className="h-screen">
       <div className="mb-20">
         <Navbar />
       </div>

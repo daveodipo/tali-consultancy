@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 export default function Insights() {
 
   return (
-  <div>
+  <div className="h-screen">
     <div className="mb-20">
     <Navbar />
     </div>
