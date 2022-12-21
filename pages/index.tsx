@@ -63,14 +63,14 @@ export default function Home() {
       </div>
       <div
         ref={startRef}
-        className="flex flex-col mb-16 lg:mb-24 md:justify-center lg:h-auto"
+        className="flex flex-col mb-16 xl:mb-20 md:justify-center lg:h-auto"
       >
-        <div className="flex font-bold uppercase justify-center mt-20 lg:mt-24 xl:mb-16 mb-12 text-2xl lg:text-2xl text-gray-500">
+        <div className="flex font-bold uppercase justify-center mt-20 xl:mb-16 mb-12 text-2xl lg:text-2xl text-gray-500">
           What We Do
         </div>
 
-        <div className=" xl:flex">
-          <div className="flex pl-10 my-3 md:my-5 md:justify-center xl:w-1/3">
+        <div className="lg:flex">
+          <div className="flex pl-10 my-3 md:my-5 md:justify-center lg:w-1/3">
             <div>
               <Image
                 data-pin-no-hover="true"
@@ -98,7 +98,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="flex pl-10 my-3 md:my-5 md:justify-center xl:w-1/3">
+          <div className="flex pl-10 my-3 md:my-5 md:justify-center lg:w-1/3">
             <div>
               <Image
                 data-pin-no-hover="true"
@@ -126,7 +126,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="flex pl-10 my-3 md:my-5 md:justify-center xl:w-1/3">
+          <div className="flex pl-10 my-3 md:my-5 md:justify-center lg:w-1/3">
             <div>
               <Image
                 data-pin-no-hover="true"
@@ -156,8 +156,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="xl:flex">
-          <div className="flex pl-10 my-3 md:my-5 md:justify-center xl:w-1/3">
+        <div className="lg:flex">
+          <div className="flex pl-10 my-3 md:my-5 md:justify-center lg:w-1/3">
             <div>
               <Image
                 data-pin-no-hover="true"
@@ -185,7 +185,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="flex pl-10 my-3 md:my-5 md:justify-center xl:w-1/3">
+          <div className="flex pl-10 my-3 md:my-5 md:justify-center lg:w-1/3">
             <div>
               <Image
                 data-pin-no-hover="true"
@@ -213,7 +213,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="flex pl-10 my-3 md:my-5 md:justify-center xl:w-1/3">
+          <div className="flex pl-10 my-3 md:my-5 md:justify-center lg:w-1/3">
             <div>
               <Image
                 data-pin-no-hover="true"
@@ -242,8 +242,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="xl:flex">
-          <div className="flex pl-10 my-3 md:my-5 md:justify-center xl:w-1/3">
+        <div className="lg:flex">
+          <div className="flex pl-10 my-3 md:my-5 md:justify-center lg:w-1/3">
             <div>
               <Image
                 data-pin-no-hover="true"

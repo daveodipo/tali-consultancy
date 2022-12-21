@@ -111,10 +111,10 @@ export default function Navbar() {
           scrollPosition > 20
             ? " bg-gray-50 opacity-90 shadow transition-shadow z-50"
             : "shadow-none",
-          "w-full h-16 items-center justify-center px-2 pt-2 xl:hidden text-tali1 top-0 fixed"
+          "w-full h-16 items-center justify-center px-2 pt-2 lg:hidden text-tali1 top-0 fixed"
         )}
       >
-        <div className="h-14 w-36 flex left-3 absolute">
+        <div className="h-14 w-36 flex left-3 absolute lg:hidden">
           <Image src={tali} alt="tali" />
         </div>
         <div className="top-2 z-20 right-3 absolute">
@@ -126,26 +126,26 @@ export default function Navbar() {
           scrollPosition > 16
             ? "bg-gray-50 text-gray-800 shadow opacity-90"
             : "shadow-none text-gray-50",
-          "hidden xl:flex top-0 w-full h-16  items-center px-5 fixed transition-shadow z-20 font-semibold"
+          "hidden lg:flex top-0 w-full h-16  items-center px-5 fixed transition-shadow z-20 font-semibold"
         )}
       >
         <Link href="/" className="h-14 w-36 flex top-1 left-3 absolute">
           <Image src={tali} alt="tali" />
         </Link>
         <div className="flex ml-auto">
-          <Link href="/" className="mx-2 xl:hover:text-tali3">
+          <Link href="/" className="mx-2 lg:hover:text-tali3">
             Home
           </Link>
-          <Link href="about" className="mx-2 xl:hover:text-tali3">
+          <Link href="about" className="mx-2 lg:hover:text-tali3">
             About
           </Link>
-          <Link href="services" className="mx-2 xl:hover:text-tali3">
+          <Link href="services" className="mx-2 lg:hover:text-tali3">
             Services
           </Link>
-          <Link href="insights" className="mx-2 xl:hover:text-tali3">
+          <Link href="insights" className="mx-2 lg:hover:text-tali3">
             Insights
           </Link>
-          <Link href="contact" className="mx-2 xl:hover:text-tali3">
+          <Link href="contact" className="mx-2 lg:hover:text-tali3">
             Contact
           </Link>
         </div>

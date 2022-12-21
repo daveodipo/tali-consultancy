@@ -31,12 +31,12 @@ export default function Footer() {
         </div>
         </div>
       </div>
-        <div className="text-center flex flex-col lg:flex-row lg:text-sm lg:justify-center">
-          <Link href="/services/#human-resource-management" className="my-4 lg:mx-3">Human Resource Management</Link>
-          <Link href="/services/#strategic-ICT-consulting" className="my-4 lg:mx-3">Strategic ICT Consulting</Link>
-          <Link href="/services/#financial-and-grants" className="my-4 lg:mx-3">Financial and Grants Management</Link>
-          <Link href="/services/#procurement-and-logistics" className="my-4 lg:mx-3">Procurement and Logistics</Link>
-          <Link href="/services/#project-management" className="my-4 lg:mx-3">Project Management</Link>
+        <div className="text-center flex flex-col lg:flex-row lg:text-sm lg:justify-center ">
+          <Link href="/services/#human-resource-management" className="my-4 lg:mx-3 lg:hover:text-gray-300">Human Resource Management</Link>
+          <Link href="/services/#strategic-ICT-consulting" className="my-4 lg:mx-3 lg:hover:text-gray-300">Strategic ICT Consulting</Link>
+          <Link href="/services/#financial-and-grants" className="my-4 lg:mx-3 lg:hover:text-gray-300">Financial and Grants Management</Link>
+          <Link href="/services/#procurement-and-logistics" className="my-4 lg:mx-3 lg:hover:text-gray-300">Procurement and Logistics</Link>
+          <Link href="/services/#project-management" className="my-4 lg:mx-3 lg:hover:text-gray-300">Project Management</Link>
         </div>
     </div>
   );
