@@ -14,13 +14,13 @@ export default function Footer() {
           </Link>
           <div className="flex text-2xl justify-center my-6 ">
             <Link href="">
-              <FaLinkedinIn className="mx-3 lg:hover:text-linkedInBlue" />
+              <FaLinkedinIn className="mx-3 lg:hover:text-linkedInBlue transition ease-in-out duration-150" />
             </Link>
             <Link href="">
-              <FaFacebookF className="mx-3 lg:hover:text-facebookBlue" />
+              <FaFacebookF className="mx-3 lg:hover:text-facebookBlue transition ease-in-out duration-150" />
             </Link>
             <Link href="https://twitter.com/Taliconsultancy">
-              <FaTwitter className="mx-3 lg:hover:text-twitterBlue" />
+              <FaTwitter className="mx-3 lg:hover:text-twitterBlue transition ease-in-out duration-150" />
             </Link>
             {/* <FaInstagramSquare className="mx-3"/> */}
           </div>
@@ -39,31 +39,31 @@ export default function Footer() {
       <div className="text-center flex flex-col lg:flex-row lg:text-sm lg:justify-center ">
         <Link
           href="/services/#human-resource-management"
-          className="my-4 lg:mx-3 lg:hover:text-gray-300"
+          className="my-4 lg:mx-3 lg:hover:text-tali3 transition ease-in-out duration-150"
         >
           Human Resource Management
         </Link>
         <Link
           href="/services/#strategic-ICT-consulting"
-          className="my-4 lg:mx-3 lg:hover:text-gray-300"
+          className="my-4 lg:mx-3 lg:hover:text-tali3 transition ease-in-out duration-150"
         >
           Strategic ICT Consulting
         </Link>
         <Link
           href="/services/#financial-and-grants"
-          className="my-4 lg:mx-3 lg:hover:text-gray-300"
+          className="my-4 lg:mx-3 lg:hover:text-tali3 transition ease-in-out duration-150"
         >
           Financial and Grants Management
         </Link>
         <Link
           href="/services/#procurement-and-logistics"
-          className="my-4 lg:mx-3 lg:hover:text-gray-300"
+          className="my-4 lg:mx-3 lg:hover:text-tali3 transition ease-in-out duration-150"
         >
           Procurement and Logistics
         </Link>
         <Link
           href="/services/#project-management"
-          className="my-4 lg:mx-3 lg:hover:text-gray-300"
+          className="my-4 lg:mx-3 lg:hover:text-tali3 transition ease-in-out duration-150"
         >
           Project Management
         </Link>

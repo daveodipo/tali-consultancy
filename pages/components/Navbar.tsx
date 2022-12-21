@@ -133,19 +133,19 @@ export default function Navbar() {
           <Image src={tali} alt="tali" />
         </Link>
         <div className="flex ml-auto">
-          <Link href="/" className="mx-2 lg:hover:text-tali3">
+          <Link href="/" className="mx-2 lg:hover:text-tali3 transition ease-in-out duration-150">
             Home
           </Link>
-          <Link href="about" className="mx-2 lg:hover:text-tali3">
+          <Link href="about" className="mx-2 lg:hover:text-tali3 transition ease-in-out duration-150">
             About
           </Link>
-          <Link href="services" className="mx-2 lg:hover:text-tali3">
+          <Link href="services" className="mx-2 lg:hover:text-tali3 transition ease-in-out duration-150">
             Services
           </Link>
-          <Link href="insights" className="mx-2 lg:hover:text-tali3">
+          <Link href="insights" className="mx-2 lg:hover:text-tali3 transition ease-in-out duration-150">
             Insights
           </Link>
-          <Link href="contact" className="mx-2 lg:hover:text-tali3">
+          <Link href="contact" className="mx-2 lg:hover:text-tali3 transition ease-in-out duration-150">
             Contact
           </Link>
         </div>
