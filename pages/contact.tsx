@@ -51,7 +51,7 @@ export default function Contact() {
         </div>
         <div className="w-full items-center flex flex-col lg:mb-20 mb-16">
           <div className="text-3xl font-semibold text-gray-800">Locations</div>
-          <div className="flex md:flex-row w-full flex-col font-semibold items-center md:justify-center text-gray-800 text-center">
+          <div className="flex md:flex-row w-full flex-col items-center md:justify-center text-gray-800 text-center">
             <div className="my-6 md:mr-10">
               <p>Second floor,</p>
               <p>Banadir plaza building,</p>

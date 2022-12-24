@@ -3,6 +3,7 @@ import Head from "next/head";
 import consulting from "./../Images/CONSULTING2.jpg";
 import Image from "next/image";
 import Footer from "./components/Footer";
+// import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax"; 
 
 export default function About() {
   return (
@@ -58,7 +59,7 @@ export default function About() {
             charitable, faith based organizations and Governmental bodies.
           </div>
           <div className="my-2">
-            We pride ourselves in our professionalism, accuracy, cost
+            At Tali, we pride ourselves in our professionalism, accuracy, cost
             efficiency, social responsibilities and deliverables.
           </div>
         </div>
