@@ -73,7 +73,7 @@ export default function About() {
           />
         </div>
       </div>
-      <div className="">
+      <div>
       <div className="text-2xl text-gray-800 w-full justify-center flex mb-8 font-semibold">Our values</div>
       <ul className="lg:text-xl text-tali3 flex md:flex-row flex-col w-full justify-center list-disc pl-8 lg:pl-0">
         <li className="mx-5">Vision</li>
