@@ -276,16 +276,10 @@ export default function Home() {
       <div className="h-60 md:h-96 w-full flex lg:h-[28rem] ">
         <ParallaxBanner>
           <ParallaxBannerLayer speed={-10}>
-            <Image src={consultants} alt="consultants" fill objectFit="cover" />
+            <Image src={consultants} alt="consultants" fill className="object-cover"/>
           </ParallaxBannerLayer>
           <ParallaxBannerLayer speed={1}>
-            <div
-              style={{
-                backgroundColor: "#134e4a",
-                opacity: 0.6,
-                position: "relative",
-                height: "100%",
-              }}
+            <div className="bg-teal-900 opacity-60 h-full relative"
             ></div>
           </ParallaxBannerLayer>
         </ParallaxBanner>

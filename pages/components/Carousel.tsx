@@ -48,7 +48,7 @@ export default function ImgSlides({ startRef }: { startRef: null | any }) {
           src={item.image.src}
           alt="tali consultancy"
           fill
-          objectFit="cover"
+          className="object-cover"
           data-pin-no-hover="true"
         />
         <div className="absolute top-1/3 md:mt-6 h-auto flex flex-col mt-">
