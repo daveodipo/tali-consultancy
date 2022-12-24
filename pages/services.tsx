@@ -11,7 +11,7 @@ export default function Services() {
   return (
     <div>
             <Head>
-        <title>Core Services | Tali </title>
+        <title>Consulting Services | Tali </title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="apple-touch-icon"
