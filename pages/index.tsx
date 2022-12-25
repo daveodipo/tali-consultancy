@@ -22,6 +22,11 @@ import consultants from "./../public/consultants-small.png";
 import { ParallaxBannerLayer, ParallaxBanner } from "react-scroll-parallax";
 import taliAfrica from "./../public/Tali-Africa-small.png";
 import { useRef } from "react";
+import { BsCheckCircleFill } from "react-icons/bs";
+import { BiCurrentLocation } from "react-icons/bi";
+import { RiCustomerService2Line } from "react-icons/ri";
+import { FaHandshake } from "react-icons/fa";
+import { ImOffice } from "react-icons/im";
 
 export default function Home() {
   const startRef = useRef<null | any>(null);
@@ -276,18 +281,74 @@ export default function Home() {
       <div className="h-60 md:h-96 w-full flex lg:h-[28rem] ">
         <ParallaxBanner>
           <ParallaxBannerLayer speed={-10}>
-            <Image src={consultants} alt="consultants" fill className="object-cover"/>
+            <Image
+              src={consultants}
+              alt="consultants"
+              fill
+              className="object-cover"
+            />
           </ParallaxBannerLayer>
           <ParallaxBannerLayer speed={1}>
-            <div className="bg-teal-900 opacity-60 h-full relative"
-            ></div>
+            <div className="bg-teal-900 opacity-60 h-full relative"></div>
           </ParallaxBannerLayer>
         </ParallaxBanner>
       </div>
       <div className="flex lg:hidden">
         <Image data-pin-no-hover="true" src={taliAfrica} alt="tali footprint" />
       </div>
-      <div className="mb-12 md:mb-16 mt-20 md:mt-28">
+      <div className="flex flex-col items-center mb-16 mt-20 px-4">
+        <div className="text-2xl md:text-3xl lg:text-2xl justify-center flex font-bold text-gray-500 mb-8 lg:mb-10">
+           COMPLETED PROJECTS
+        </div>
+        <div>
+          <div className="flex items-center my-3 lg:my-5">
+            <div className="text-teal-600 mr-2 lg:mr-4">
+              <BsCheckCircleFill />
+            </div>
+            <div>
+              End of project analysis for Pan African Food Sovereignty in Chad
+              and Rwanda.
+            </div>
+          </div>
+          <div className="flex items-center my-3 lg:my-5">
+            <div className="text-teal-600 mr-2 lg:mr-4">
+              <BsCheckCircleFill />
+            </div>
+            <div>
+              Long term development strategy plans for Galmudug state, Somalia.
+            </div>
+          </div>
+          <div className="flex items-center my-3 lg:my-5">
+            <div className="text-teal-600 mr-2 lg:mr-4">
+              <BsCheckCircleFill />
+            </div>
+            <div>
+              Project analysis and development structure for The Malaria
+              Consortium, UK.
+            </div>
+          </div>
+          <div className="flex items-center my-3 lg:my-5">
+            <div className="text-teal-600 mr-2 lg:mr-4">
+              <BsCheckCircleFill />
+            </div>
+            <div>
+              Set up of food supply pipelines from around the world into Darfur,
+              Sudan.
+            </div>
+          </div>
+          <div className="flex items-center my-3 lg:my-5">
+            <div className="text-teal-600 mr-2 lg:mr-4">
+              <BsCheckCircleFill />
+            </div>
+            <div>
+              Rehabilitation of city infrastructure in Monrovia, Liberia.
+            </div>
+          </div>
+          <Link href="/about/#completed-projects" className="text-teal-600 lg:hover:underline transition ease-in-out duration-150">See more</Link>
+        </div>
+      </div>
+      <div className="mb-20">
+      <div className="mb-12 md:mb-16 md:mt-20">
         <div className="text-2xl md:text-3xl lg:text-2xl justify-center flex font-bold text-gray-500">
           SOME OF OUR CLIENTS
         </div>
@@ -362,6 +423,51 @@ export default function Home() {
                 height={120}
                 width={120}
               />
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div className="flex flex-col items-center mb-16 lg:mb-24 px-4">
+        <div className="text-2xl md:text-3xl lg:text-2xl justify-center flex font-bold text-gray-500 mb-6 lg:mb-10">
+          WHY US?
+        </div>
+        <div className="md:w-1/2">
+          <div className="flex items-center my-4 lg:my-5">
+            <div className="text-teal-600 mr-3 lg:mr-5 text-2xl">
+              <ImOffice />
+            </div>
+            <div>
+              Head office in Nairobi, with regional support
+              centers
+            </div>
+          </div>
+          <div className="flex items-center my-4 lg:my-5">
+            <div className="text-teal-600 mr-3 lg:mr-5 text-2xl">
+              <BiCurrentLocation />
+            </div>
+            <div>
+              Familiarity with the area
+              and its unique security requirements
+            </div>
+          </div>
+          <div className="flex items-center my-4 lg:my-5">
+            <div className="text-teal-600 mr-3 lg:mr-5 text-2xl">
+              <RiCustomerService2Line />
+            </div>
+            <div>
+              Dedicated and experienced professional team to
+              provide reliable support
+            </div>
+          </div>
+          <div className="flex items-center my-4 lg:my-5">
+            <div className="text-teal-600 mr-3 lg:mr-5 text-2xl">
+              <FaHandshake />
+            </div>
+            <div>
+              Track record - successfully worked with clients such as UNICEF, SCI, World
+              Vision, Malaria Consortium, Government of Liberia, Government
+              of Ivory Coast, Welt Hunger Hilfe and more
             </div>
           </div>
         </div>

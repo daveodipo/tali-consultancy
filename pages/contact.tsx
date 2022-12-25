@@ -73,8 +73,8 @@ export default function Contact() {
             className="flex items-center"
           >
             Email us{" "}
-            <div className="pb-1 ml-2">
-              <Image src={redirect} height={32} width={36} alt="redirect"/>
+            <div className=" lg:pb-2 lg:pt-1 ml-2">
+              <Image src={redirect} height={26} width={32} alt="redirect"/>
             </div>
           </Link>
         </div>
