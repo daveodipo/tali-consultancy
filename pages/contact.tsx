@@ -73,7 +73,7 @@ export default function Contact() {
             className="flex items-center"
           >
             Email us{" "}
-            <div className=" lg:pb-2 lg:pt-1 ml-2">
+            <div className="pb-1 lg:pb-2 lg:pt-1 ml-2">
               <Image src={redirect} height={26} width={32} alt="redirect"/>
             </div>
           </Link>
@@ -82,7 +82,7 @@ export default function Contact() {
           <div className="text-3xl font-semibold text-gray-800 mb-6">
             Social Media
           </div>
-          <div className="text-center text-tali3 flex flex-col">
+          <div className="text-center text-teal-600 flex flex-col">
             <Link href="" className="my-2 lg:hover:underline underline-offset-4">Find us on Facebook</Link>
             <Link href="https://twitter.com/Taliconsultancy" className="my-2 lg:hover:underline underline-offset-4">Follow us on Twitter</Link>
             <Link href="" className="my-2 lg:hover:underline underline-offset-4">Connect with us on LinkedIn</Link>

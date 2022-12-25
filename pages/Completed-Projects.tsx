@@ -2,7 +2,7 @@ import { BsCheckCircleFill } from "react-icons/bs";
 
 export default function CompletedProjects() {
   return (
-    <div className="flex flex-col items-center mb-16 mt-20 px-4">
+    <div className="flex flex-col items-center mb-16 mt-20 px-4 text-gray-800">
       <div className="text-2xl md:text-3xl lg:text-2xl justify-center flex font-bold text-gray-500 mb-8 lg:mb-10">
         COMPLETED PROJECTS
       </div>

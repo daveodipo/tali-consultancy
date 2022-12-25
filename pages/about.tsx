@@ -92,14 +92,14 @@ export default function About() {
           <div className="text-2xl text-gray-800 w-full justify-center flex mb-8 font-semibold">
             Our values
           </div>
-          <ul className="lg:text-xl text-tali3 flex md:flex-row flex-col w-full justify-center list-disc pl-8 lg:pl-0">
-            <li className="mx-5">Vision</li>
-            <li className="mx-5">Mission</li>
-            <li className="mx-5">Quality</li>
-            <li className="mx-5">Expertise</li>
-            <li className="mx-5">Customer focus</li>
-            <li className="mx-5">Responsibility</li>
-            <li className="mx-5">Respect</li>
+          <ul className="lg:text-xl lg:text-tali3 flex md:flex-row flex-col w-full justify-center list-disc pl-8 lg:pl-0">
+            <li className="mx-5 my-2 lg:my-0">Vision</li>
+            <li className="mx-5 my-2 lg:my-0">Mission</li>
+            <li className="mx-5 my-2 lg:my-0">Quality</li>
+            <li className="mx-5 my-2 lg:my-0">Expertise</li>
+            <li className="mx-5 my-2 lg:my-0">Customer focus</li>
+            <li className="mx-5 my-2 lg:my-0">Responsibility</li>
+            <li className="mx-5 my-2 lg:my-0">Respect</li>
           </ul>
         </div>
       </div>

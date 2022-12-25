@@ -298,11 +298,11 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center mb-16 mt-20 px-4">
         <div className="text-2xl md:text-3xl lg:text-2xl justify-center flex font-bold text-gray-500 mb-8 lg:mb-10">
-           COMPLETED PROJECTS
+          COMPLETED PROJECTS
         </div>
         <div>
-          <div className="flex items-center my-3 lg:my-5">
-            <div className="text-teal-600 mr-2 lg:mr-4">
+          <div className="flex items-center my-4 lg:my-5">
+            <div className="text-teal-600 mr-3 lg:mr-5 text-lg">
               <BsCheckCircleFill />
             </div>
             <div>
@@ -310,16 +310,16 @@ export default function Home() {
               and Rwanda.
             </div>
           </div>
-          <div className="flex items-center my-3 lg:my-5">
-            <div className="text-teal-600 mr-2 lg:mr-4">
+          <div className="flex items-center my-4 lg:my-5">
+            <div className="text-teal-600 mr-3 lg:mr-5 text-lg">
               <BsCheckCircleFill />
             </div>
             <div>
               Long term development strategy plans for Galmudug state, Somalia.
             </div>
           </div>
-          <div className="flex items-center my-3 lg:my-5">
-            <div className="text-teal-600 mr-2 lg:mr-4">
+          <div className="flex items-center my-4 lg:my-5">
+            <div className="text-teal-600 mr-3 lg:mr-5 text-lg">
               <BsCheckCircleFill />
             </div>
             <div>
@@ -327,8 +327,8 @@ export default function Home() {
               Consortium, UK.
             </div>
           </div>
-          <div className="flex items-center my-3 lg:my-5">
-            <div className="text-teal-600 mr-2 lg:mr-4">
+          <div className="flex items-center my-4 lg:my-5">
+            <div className="text-teal-600 mr-3 lg:mr-5 text-lg">
               <BsCheckCircleFill />
             </div>
             <div>
@@ -336,97 +336,102 @@ export default function Home() {
               Sudan.
             </div>
           </div>
-          <div className="flex items-center my-3 lg:my-5">
-            <div className="text-teal-600 mr-2 lg:mr-4">
+          <div className="flex items-center my-4 lg:my-5">
+            <div className="text-teal-600 mr-3 lg:mr-5 text-lg">
               <BsCheckCircleFill />
             </div>
             <div>
               Rehabilitation of city infrastructure in Monrovia, Liberia.
             </div>
           </div>
-          <Link href="/about/#completed-projects" className="text-teal-600 lg:hover:underline transition ease-in-out duration-150">See more</Link>
+          <Link
+            href="/about/#completed-projects"
+            className="text-teal-600 lg:hover:underline transition ease-in-out duration-150"
+          >
+            See more
+          </Link>
         </div>
       </div>
       <div className="mb-20">
-      <div className="mb-12 md:mb-16 md:mt-20">
-        <div className="text-2xl md:text-3xl lg:text-2xl justify-center flex font-bold text-gray-500">
-          SOME OF OUR CLIENTS
-        </div>
-      </div>
-      <div className="flex my-10 flex-col lg:flex-row">
-        <div className="flex w-full mb-8 md:mb-12 lg:mb-8">
-          <div className="w-1/2 flex justify-center">
-            <div className="border-2 border-teal-500 p-3 flex items-center h-40 w-40 md:h-60 md:w-60 lg:h-40 lg:w-40 justify-center">
-              <Image
-                data-pin-no-hover="true"
-                src={UNDP}
-                alt="UNDP"
-                height={120}
-                width={120}
-              />
-            </div>
-          </div>
-          <div className="w-1/2 flex justify-center">
-            <div className="border-2 border-teal-500 p-3 items-center flex h-40 w-40 md:h-60 md:w-60 lg:h-40 lg:w-40 justify-center">
-              <Image
-                data-pin-no-hover="true"
-                src={INTERSOS}
-                alt="INTERSOS"
-                height={120}
-                width={120}
-              />
-            </div>
+        <div className="mb-12 md:mb-16 md:mt-20">
+          <div className="text-2xl md:text-3xl lg:text-2xl justify-center flex font-bold text-gray-500">
+            SOME OF OUR CLIENTS
           </div>
         </div>
-        <div className="flex w-full mb-8 md:mb-12 lg:mb-8">
-          <div className="w-1/2 flex justify-center">
-            <div className="border-2 border-teal-500 p-3 flex items-center h-40 w-40 md:h-60 md:w-60 lg:h-40 lg:w-40 justify-center">
-              <Image
-                data-pin-no-hover="true"
-                src={WELTHUNGER}
-                alt="WELT-HUNGER-HILFE"
-                height={120}
-                width={120}
-              />
+        <div className="flex my-10 flex-col lg:flex-row">
+          <div className="flex w-full mb-8 md:mb-12 lg:mb-8">
+            <div className="w-1/2 flex justify-center">
+              <div className="border-2 border-teal-500 p-3 flex items-center h-40 w-40 md:h-60 md:w-60 lg:h-40 lg:w-40 justify-center">
+                <Image
+                  data-pin-no-hover="true"
+                  src={UNDP}
+                  alt="UNDP"
+                  height={120}
+                  width={120}
+                />
+              </div>
+            </div>
+            <div className="w-1/2 flex justify-center">
+              <div className="border-2 border-teal-500 p-3 items-center flex h-40 w-40 md:h-60 md:w-60 lg:h-40 lg:w-40 justify-center">
+                <Image
+                  data-pin-no-hover="true"
+                  src={INTERSOS}
+                  alt="INTERSOS"
+                  height={120}
+                  width={120}
+                />
+              </div>
             </div>
           </div>
-          <div className="w-1/2 flex justify-center">
-            <div className="flex border-2 border-teal-500 p-3 items-center h-40 w-40 md:h-60 md:w-60 lg:h-40 lg:w-40 justify-center">
-              <Image
-                data-pin-no-hover="true"
-                src={NTA}
-                alt="NTA"
-                height={120}
-                width={120}
-              />
+          <div className="flex w-full mb-8 md:mb-12 lg:mb-8">
+            <div className="w-1/2 flex justify-center">
+              <div className="border-2 border-teal-500 p-3 flex items-center h-40 w-40 md:h-60 md:w-60 lg:h-40 lg:w-40 justify-center">
+                <Image
+                  data-pin-no-hover="true"
+                  src={WELTHUNGER}
+                  alt="WELT-HUNGER-HILFE"
+                  height={120}
+                  width={120}
+                />
+              </div>
+            </div>
+            <div className="w-1/2 flex justify-center">
+              <div className="flex border-2 border-teal-500 p-3 items-center h-40 w-40 md:h-60 md:w-60 lg:h-40 lg:w-40 justify-center">
+                <Image
+                  data-pin-no-hover="true"
+                  src={NTA}
+                  alt="NTA"
+                  height={120}
+                  width={120}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="flex w-full mb-8 md:mb-12 lg:mb-8">
+            <div className="w-1/2 flex justify-center">
+              <div className="border-2 border-teal-500 p-3 flex items-center h-40 w-40 md:h-60 md:w-60 lg:h-40 lg:w-40 justify-center">
+                <Image
+                  data-pin-no-hover="true"
+                  src={HAPN}
+                  alt="Horn of Africa Peace Network"
+                  height={120}
+                  width={120}
+                />
+              </div>
+            </div>
+            <div className="w-1/2 flex justify-center">
+              <div className="flex border-2 border-teal-500 p-3 items-center h-40 w-40 md:h-60 md:w-60 lg:h-40 lg:w-40 justify-center">
+                <Image
+                  data-pin-no-hover="true"
+                  src={SAVANA}
+                  alt="UNDP"
+                  height={120}
+                  width={120}
+                />
+              </div>
             </div>
           </div>
         </div>
-        <div className="flex w-full mb-8 md:mb-12 lg:mb-8">
-          <div className="w-1/2 flex justify-center">
-            <div className="border-2 border-teal-500 p-3 flex items-center h-40 w-40 md:h-60 md:w-60 lg:h-40 lg:w-40 justify-center">
-              <Image
-                data-pin-no-hover="true"
-                src={HAPN}
-                alt="Horn of Africa Peace Network"
-                height={120}
-                width={120}
-              />
-            </div>
-          </div>
-          <div className="w-1/2 flex justify-center">
-            <div className="flex border-2 border-teal-500 p-3 items-center h-40 w-40 md:h-60 md:w-60 lg:h-40 lg:w-40 justify-center">
-              <Image
-                data-pin-no-hover="true"
-                src={SAVANA}
-                alt="UNDP"
-                height={120}
-                width={120}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
       </div>
       <div className="flex flex-col items-center mb-16 lg:mb-24 px-4">
         <div className="text-2xl md:text-3xl lg:text-2xl justify-center flex font-bold text-gray-500 mb-6 lg:mb-10">
@@ -437,18 +442,14 @@ export default function Home() {
             <div className="text-teal-600 mr-3 lg:mr-5 text-2xl">
               <ImOffice />
             </div>
-            <div>
-              Head office in Nairobi, with regional support
-              centers
-            </div>
+            <div>Head office in Nairobi, with regional support centers</div>
           </div>
           <div className="flex items-center my-4 lg:my-5">
             <div className="text-teal-600 mr-3 lg:mr-5 text-2xl">
               <BiCurrentLocation />
             </div>
             <div>
-              Familiarity with the area
-              and its unique security requirements
+              Familiarity with the area and its unique security requirements
             </div>
           </div>
           <div className="flex items-center my-4 lg:my-5">
@@ -456,8 +457,8 @@ export default function Home() {
               <RiCustomerService2Line />
             </div>
             <div>
-              Dedicated and experienced professional team to
-              provide reliable support
+              Dedicated and experienced professional team to provide reliable
+              support
             </div>
           </div>
           <div className="flex items-center my-4 lg:my-5">
@@ -465,9 +466,9 @@ export default function Home() {
               <FaHandshake />
             </div>
             <div>
-              Track record - successfully worked with clients such as UNICEF, SCI, World
-              Vision, Malaria Consortium, Government of Liberia, Government
-              of Ivory Coast, Welt Hunger Hilfe and more
+              Track record - successfully worked with clients such as UNICEF,
+              SCI, World Vision, Malaria Consortium, Government of Liberia,
+              Government of Ivory Coast, Welt Hunger Hilfe and more
             </div>
           </div>
         </div>
