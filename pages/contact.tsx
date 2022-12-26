@@ -86,7 +86,7 @@ export default function Contact() {
           <div className="text-3xl font-semibold text-gray-800 mb-6">
             Social Media
           </div>
-          <div className="text-center text-teal-600 flex flex-col">
+          <div className="text-center text-tali3 flex flex-col">
             <div className="my-2 lg:cursor-pointer lg:hover:underline underline-offset-4">
               Find us on Facebook
             </div>
