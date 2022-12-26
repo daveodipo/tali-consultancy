@@ -13,12 +13,12 @@ export default function Footer() {
             <Image src={tali} alt="tali" data-pin-no-hover="true" />
           </Link>
           <div className="flex text-2xl justify-center my-6 ">
-            <Link href="">
-              <FaLinkedinIn className="mx-3 lg:hover:text-linkedInBlue transition ease-in-out duration-150" />
-            </Link>
-            <Link href="">
-              <FaFacebookF className="mx-3 lg:hover:text-facebookBlue transition ease-in-out duration-150" />
-            </Link>
+            <div>
+              <FaLinkedinIn className="mx-3 cursor-pointer lg:hover:text-linkedInBlue transition ease-in-out duration-150" />
+            </div>
+            <div>
+              <FaFacebookF className="mx-3 cursor-pointer lg:hover:text-facebookBlue transition ease-in-out duration-150" />
+            </div>
             <Link href="https://twitter.com/Taliconsultancy">
               <FaTwitter className="mx-3 lg:hover:text-twitterBlue transition ease-in-out duration-150" />
             </Link>

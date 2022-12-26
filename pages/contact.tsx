@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Footer from "./components/Footer";
 import Image from "next/image";
-import redirect from "./../public/redirect.png"
+import redirect from "./../public/redirect.png";
 
 export default function Contact() {
   return (
@@ -47,7 +47,14 @@ export default function Contact() {
         </div>
         <div className=" justify-center text-center px-4 w-full lg:flex-row text-gray-800 lg:mb-20 mb-16">
           We have 2 offices in the region. Interested in working with us?
-          Explore our <Link href="/services" className="lg:hover:text-tali2 text-tali3 underline underline-offset-4 md:font-semibold">consulting services</Link>.
+          Explore our{" "}
+          <Link
+            href="/services"
+            className="lg:hover:text-tali2 text-tali3 underline underline-offset-4 md:font-semibold"
+          >
+            consulting services
+          </Link>
+          .
         </div>
         <div className="w-full items-center flex flex-col lg:mb-20 mb-16">
           <div className="text-3xl font-semibold text-gray-800">Locations</div>
@@ -68,13 +75,10 @@ export default function Contact() {
           </div>
         </div>
         <div className="w-full flex justify-center text-tali3 lg:hover:scale-[1.02] transition ease-in-out duration-150 font-semibold text-2xl mb-10">
-          <Link
-            href=""
-            className="flex items-center"
-          >
+          <Link href="" className="flex items-center">
             Email us{" "}
             <div className="pb-1 lg:pb-2 lg:pt-1 ml-2">
-              <Image src={redirect} height={26} width={32} alt="redirect"/>
+              <Image src={redirect} height={26} width={32} alt="redirect" />
             </div>
           </Link>
         </div>
@@ -83,9 +87,18 @@ export default function Contact() {
             Social Media
           </div>
           <div className="text-center text-teal-600 flex flex-col">
-            <Link href="" className="my-2 lg:hover:underline underline-offset-4">Find us on Facebook</Link>
-            <Link href="https://twitter.com/Taliconsultancy" className="my-2 lg:hover:underline underline-offset-4">Follow us on Twitter</Link>
-            <Link href="" className="my-2 lg:hover:underline underline-offset-4">Connect with us on LinkedIn</Link>
+            <div className="my-2 lg:cursor-pointer lg:hover:underline underline-offset-4">
+              Find us on Facebook
+            </div>
+            <Link
+              href="https://twitter.com/Taliconsultancy"
+              className="my-2 lg:hover:underline underline-offset-4"
+            >
+              Follow us on Twitter
+            </Link>
+            <div className="lg:cursor-pointer my-2 lg:hover:underline underline-offset-4">
+              Connect with us on LinkedIn
+            </div>
           </div>
         </div>
       </div>
