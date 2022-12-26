@@ -51,7 +51,7 @@ export default function ImgSlides({ startRef }: { startRef: null | any }) {
           className="object-cover"
           data-pin-no-hover="true"
         />
-        <div className="absolute top-1/3 md:mt-6 h-auto flex flex-col mt-">
+        <div className="absolute top-1/3 md:mt-6 h-auto flex flex-col">
           <div className="text-sm opacity-90 w-fit mb-2 pl-11 lg:pl-12 text-gray-100 font-bold px-2 py-2 ">
             {item.headline}
           </div>
@@ -69,12 +69,14 @@ export default function ImgSlides({ startRef }: { startRef: null | any }) {
             <FaLongArrowAltRight className="text-2xl font-semibold pt-1 pl-2" />
           </Link>
         </div>
+        <div className="flex justify-center absolute bottom-10 pb-8 lg:pb-0 lg:bottom-7 w-full">          
         <button
-          className="absolute text-gray-50 font-bold bottom-10 lg:bottom-7 pb-8 lg:pb-0 left-1/2 animate-bounce text-lg lg:text-base"
+          className="text-gray-50 font-bold left-1/2 animate-bounce text-lg lg:text-base"
           onClick={() => handleButtonClick(startRef)}
         >
           <BsArrowDownCircle />
         </button>
+        </div>
       </div>
     </Carousel.Slide>
   ));
