@@ -6,6 +6,8 @@ import FinancialAndGrantsManagement from "./Financial-And-Grants-Management";
 import ProcurementAndLogistics from "./Procurement -And-Logistics";
 import ProjectManagement from "./Project-Management";
 import Head from "next/head";
+import MonitoringAndEvaluation from "./Monitoring-And-Evaluation";
+import ProgramReengineering from "./Program-Re-engineering";
 
 export default function Services() {
   return (
@@ -53,11 +55,17 @@ export default function Services() {
       <div id="project-management" className="mb-12 pl-4 pr-1 lg:px-6 ">
         <ProjectManagement />
       </div>
-      <div>
+      <div id="monitoring-and-evaluation" className="mb-12 pl-4 pr-1 lg:px-6 ">
+        <MonitoringAndEvaluation />
+      </div>
+      <div id="program-reengineering" className="mb-12 pl-4 pr-1 lg:px-6 ">
+        <ProgramReengineering />
+      </div>
+      {/* <div>
         <div className="mb-12 pl-4 pr-1 w-full flex justify-center text-gray-800 font-semibold text-2xl md:text-3xl lg:text-2xl">
           CASE STUDIES
         </div>
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

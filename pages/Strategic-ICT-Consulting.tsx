@@ -93,6 +93,11 @@ export default function StrategicICTConsulting() {
             solutions and hardware sales and support, which help our customers
             achieve their business goals.
           </li>
+          <li className="my-2">
+            <span className="text-gray-800 font-semibold mr-2">
+             Web Development and Design
+            </span>
+          </li>
         </ul>
         <div>
           We understand the importance of using technology to drive business

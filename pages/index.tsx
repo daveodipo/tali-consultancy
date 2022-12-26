@@ -239,7 +239,7 @@ export default function Home() {
               </div>
               <Link
                 className="text-teal-600 flex items-center text-sm mt-1 lg:hover:translate-x-2 transition ease-in-out delay-100"
-                href="/services/#project-management"
+                href="/services/#monitoring-and-evaluation"
               >
                 Read more{" "}
                 <BsArrowRightShort className="text-2xl font-semibold pt-1" />
