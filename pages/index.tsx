@@ -16,6 +16,7 @@ import WELTHUNGER from "./../Images/welthungerhilfe-logo.png";
 import NTA from "./../Images/NTA-LOGO.png";
 import HAPN from "./../Images/HAPN-Logo.png";
 import SAVANA from "./../Images/SAVANA-LOGO.png";
+import SSR from "./../Images/SSR-icon.png";
 import Link from "next/link";
 import { BsArrowRightShort } from "react-icons/bs";
 import consultants from "./../public/consultants-small.png";
@@ -270,6 +271,34 @@ export default function Home() {
               <Link
                 className="text-teal-600 flex items-center text-sm mt-1 lg:hover:translate-x-2 transition ease-in-out delay-100"
                 href="/services/#program-reengineering"
+              >
+                Read more{" "}
+                <BsArrowRightShort className="text-2xl font-semibold pt-1" />
+              </Link>
+            </div>
+          </div>
+          <div className="flex pl-10 my-3 md:my-5 md:justify-center lg:w-1/3">
+            <div>
+              <Image
+                data-pin-no-hover="true"
+                src={SSR}
+                height={80}
+                width={80}
+                alt="sector security research"
+              />
+            </div>
+            <div className="flex flex-col w-2/3 md:w-full pr-3 pl-1 md:pl-3">
+              <div className="text-teal-600 text-xl md:text-2xl lg:text-xl font-semibold mb-2">
+                Security Sector Research
+              </div>
+              <div>
+                Capitalize on insights on research methods and techniques to
+                identify, analyze, and evaluate the effectiveness of security
+                systems including security policies, regulations, and practices.
+              </div>
+              <Link
+                className="text-teal-600 flex items-center text-sm mt-1 lg:hover:translate-x-2 transition ease-in-out delay-100"
+                href="/services/#security-sector-research"
               >
                 Read more{" "}
                 <BsArrowRightShort className="text-2xl font-semibold pt-1" />

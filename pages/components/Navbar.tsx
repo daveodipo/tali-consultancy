@@ -45,7 +45,7 @@ export default function Navbar() {
         leaveTo="opacity-0"
       >
         <div
-          className={`flex fixed top-16 h-2/5 lg:h-full lg:w-3/4 bg-tali1 text-gray-50 w-full shadow-xl z-10 ${
+          className={`flex fixed top-16 h-2/5 sm:h-1/2 md:h-3/5 lg:h-full lg:w-3/4 bg-tali1 text-gray-50 w-full shadow-xl z-10 ${
             isOpen ? "left-0" : "left-[-500px]"
           }`}
           ref={modal}

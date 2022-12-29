@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { Carousel, Embla } from "@mantine/carousel";
 import Image from "next/image";
@@ -11,7 +11,7 @@ export default function ImgSlides({ startRef }: { startRef: null | any }) {
   const [embla, setEmbla] = useState<Embla | null>(null);
   const autoplay = useRef(Autoplay({ delay: 5000 }));
 
-  // scale animation
+  // transfrom scale
   // const [activeIndex,setActiveIndex] = useState(0)
 
   // useEffect(()=> {
