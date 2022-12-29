@@ -8,11 +8,12 @@ import ProjectManagement from "./Project-Management";
 import Head from "next/head";
 import MonitoringAndEvaluation from "./Monitoring-And-Evaluation";
 import ProgramReengineering from "./Program-Re-engineering";
+import SecuritySectorResearch from "./Security-Sector-Research";
 
 export default function Services() {
   return (
     <div>
-            <Head>
+      <Head>
         <title>Consulting Services | Tali </title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
@@ -60,6 +61,9 @@ export default function Services() {
       </div>
       <div id="program-reengineering" className="mb-12 pl-4 pr-1 lg:px-6 ">
         <ProgramReengineering />
+      </div>
+      <div id="security-sector-research" className="mb-12 pl-4 pr-1 lg:px-6 ">
+        <SecuritySectorResearch />
       </div>
       {/* <div>
         <div className="mb-12 pl-4 pr-1 w-full flex justify-center text-gray-800 font-semibold text-2xl md:text-3xl lg:text-2xl">
